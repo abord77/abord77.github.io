@@ -17,11 +17,11 @@ export const Projects = () => {
                 building scalable solutions, and continuous learning
               </p>
               <h3>Digital Dominion</h3>
-              <div class="project-box">
-                <div class="project-title">
-                  <div class="flexbox-container2">
-                    <div class="flexbox-container">
-                      <div class="img">
+              <div className="project-box">
+                <div className="project-title">
+                  <div className="flexbox-container2">
+                    <div className="flexbox-container">
+                      <div className="img">
                         <img
                           src={GameImg}
                           className="dominion"
@@ -29,9 +29,9 @@ export const Projects = () => {
                         ></img>
                       </div>
                     </div>
-                    <div class="flexbox-container">
-                      <div class="text">
-                        <p class="dominion">
+                    <div className="flexbox-container">
+                      <div className="text">
+                        <p className="dominion">
                           Digital Dominion is a strategic video game where two
                           players, taking on the roles of computer hackers, aim
                           to achieve one of two goals: either download four data
@@ -41,7 +41,7 @@ export const Projects = () => {
                           either viruses or data.
                         </p>
                         <p></p>
-                        <p class="dominion">
+                        <p className="dominion">
                           The game is primarily developed in C++, leveraging its
                           object-oriented capabilities for structured and
                           efficient game design. For the graphical interface,
@@ -49,11 +49,11 @@ export const Projects = () => {
                           the game elements and managing user interactions.
                         </p>
                         <p></p>
-                        <div class="flexbox-container2">
-                          <img src={githubIcon} alt="" class="dominion" />
+                        <div className="flexbox-container2">
+                          <img src={githubIcon} alt="" className="dominion" />
                           <a
                             href="https://github.com/abord77/DigitalDominion"
-                            class="dominion"
+                            className="dominion"
                           >
                             Take a look at the source code for more details!
                           </a>
@@ -64,11 +64,11 @@ export const Projects = () => {
                 </div>
               </div>
               <h3>Mini Compiler</h3>
-              <div class="project-box">
-                <div class="project-title">
-                  <div class="flexbox-container">
-                    <div class="flexbox-container2">
-                      <div class="img">
+              <div className="project-box">
+                <div className="project-title">
+                  <div className="flexbox-container">
+                    <div className="flexbox-container2">
+                      <div className="img">
                         <img
                           src={CompilerImg}
                           className="compiler"
@@ -76,9 +76,9 @@ export const Projects = () => {
                         ></img>
                       </div>
                     </div>
-                    <div class="flexbox-container2">
-                      <div class="text">
-                        <p class="compiler">
+                    <div className="flexbox-container2">
+                      <div className="text">
+                        <p className="compiler">
                           WLP4 (pronounced "Wool P Four") is a subset of C++
                           which stands for “Waterloo, Language, Plus, Pointers,
                           Plus, Procedures”. This compiler targets a simplified
@@ -97,7 +97,7 @@ export const Projects = () => {
                           int or pointer to int and the second is an int.
                         </p>
                         <p></p>
-                        <p class="compiler">
+                        <p className="compiler">
                           Local variables must be declared prior to any
                           executable statements, and control constructs like
                           if-else and while loops require well-defined block
@@ -112,15 +112,15 @@ export const Projects = () => {
                           reliability.
                         </p>
                         <p></p>
-                        <div class="flexbox-container2">
+                        <div className="flexbox-container2">
                           <img
                             src={githubIcon}
                             alt=""
-                            class="compiler github"
+                            className="compiler github"
                           />
                           <a
                             href="https://github.com/abord77/Mini-Compiler"
-                            class="compiler"
+                            className="compiler"
                           >
                             Take a look at the source code for more details!
                           </a>
@@ -137,7 +137,7 @@ export const Projects = () => {
                 </div>
               </div> */}
               <h3>AI/ML/Prompt Engineering Project</h3>
-              <div class="project-box">
+              <div className="project-box">
                 WIP, leveraging python library called langchain
               </div>
             </div>

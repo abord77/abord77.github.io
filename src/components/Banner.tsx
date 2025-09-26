@@ -61,7 +61,7 @@ export const Banner = () => {
                   <h1>{`Raymond Li`} </h1>
                   <span
                     className="txt-rotate"
-                    dataPeriod="1000"
+                    data-period="1000"
                     style={{ color: "white", fontSize: 25 }}
                     data-rotate={toRotate}
                   >

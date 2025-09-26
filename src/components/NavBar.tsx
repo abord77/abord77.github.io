@@ -9,11 +9,11 @@ import githubIcon from "../assets/img/github-icon.png";
 import resumePdf from "../assets/Raymond_Resume_2025.pdf";
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState<string>("home");
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
-    const onScroll = () => {
+    const onScroll = (): void => {
       if (window.scrollY > 50) {
         setScrolled(true);
       } else {
@@ -26,7 +26,7 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value) => {
+  const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
   };
 

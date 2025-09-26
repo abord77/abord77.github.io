@@ -40,7 +40,7 @@ export const Experiences = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <div class="center">
+                        <div className="center">
                           <h3>Software Tools Developer</h3>
                           <h5>CoreAVI | September 2024 - December 2024</h5>
                           <p></p>
@@ -77,7 +77,7 @@ export const Experiences = () => {
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <div class="center">
+                        <div className="center">
                           <h3>QA Test Engineer</h3>
                           <h5>Plooto | January 2024 - April 2024</h5>
                           <p></p>
@@ -105,7 +105,7 @@ export const Experiences = () => {
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <div class="center">
+                        <div className="center">
                           <h3>DevOps Engineer</h3>
                           <h5>TD Bank | October 2022 - December 2022</h5>
                           <p></p>

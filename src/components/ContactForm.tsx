@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, FormEvent } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/cartoon-writer.png";
 import TrackVisibility from "react-on-screen";
@@ -10,34 +10,40 @@ import "animate.css";
 // https://stackoverflow.com/questions/72632995/adding-emailjs-recaptcha-verification-in-react
 // https://stackoverflow.com/questions/74316588/vuejs-submit-form-with-emailjs-error-the-3rd-parameter-is-expected-to-be-the
 
+interface FormValues {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export const ContactForm = () => {
   const formInitialDetails = {
     name: "",
     email: "",
     message: "",
   };
-  const [formValues, setFormValues] = useState(formInitialDetails);
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const [honeypot, setHoneypot] = useState("");
-  const [processing, setProcessing] = useState(false);
-  const refCaptcha = useRef();
-  const form = useRef();
+  const [formValues, setFormValues] = useState<FormValues>(formInitialDetails);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [honeypot, setHoneypot] = useState<string>("");
+  const [processing, setProcessing] = useState<boolean>(false);
+  const refCaptcha = useRef<ReCAPTCHA>(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const [errorMessage, setErrorMessage] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string>("");
 
-  const onFormUpdate = (category, value) => {
+  const onFormUpdate = (category: keyof FormValues, value: string) => {
     setFormValues({
       ...formValues,
       [category]: value,
     });
   };
 
-  const handleCaptchaChange = (token) => {
+  const handleCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // clear old messages on new submission attempt
     setErrorMessage("");
@@ -64,7 +70,7 @@ export const ContactForm = () => {
       return;
     }
 
-    const token = refCaptcha.current.getValue();
+    const token = refCaptcha.current?.getValue();
 
     const params = {
       ...formValues,
@@ -80,7 +86,7 @@ export const ContactForm = () => {
         "template_guxiepz",
         params,
         "iCnuLvAjqZPwXZqU4",
-        "g-recaptcha-response"
+        //"g-recaptcha-response"
       )
       .then(
         (result) => {
@@ -156,7 +162,7 @@ export const ContactForm = () => {
                       <Col size={12} className="px-1">
                         <div>
                           <textarea
-                            rows="5"
+                            rows={5}
                             value={formValues.message}
                             placeholder="Message"
                             onChange={(e) =>
@@ -167,7 +173,7 @@ export const ContactForm = () => {
                           ></textarea>
                         </div>
 
-                        {errorMessage && <p class="danger">{errorMessage}</p>}
+                        {errorMessage && <p className="danger">{errorMessage}</p>}
 
                         <input
                           type="text"
@@ -200,7 +206,7 @@ export const ContactForm = () => {
                         </div>
                       </Col>
                     </Row>
-                    {successMessage && <p class="success">{successMessage}</p>}
+                    {successMessage && <p className="success">{successMessage}</p>}
                   </form>
                 </div>
               )}
