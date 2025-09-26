@@ -353,15 +353,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+.experience ul li {
+  margin-bottom: 1.25em;
+}
 .experience .nav.nav-pills {
-  width: 72%;
+  width: 85%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
+  display: flex !important;
+  flex-wrap: nowrap !important;
 }
 .experience .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 25%;
 }
 .experience .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -375,7 +380,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
   text-align: center;
-  z-index: 0;
+  margin-left: -1px; /* Collapse all shared borders */
+  z-index: 1;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+/* First pill: fully rounded left side */
+.experience .nav.nav-pills .nav-link:first-child {
+  border-radius: 55px 0 0 55px;
+  margin-left: 0; /* Remove negative margin for first */
+}
+
+/* Last pill: fully rounded right side */
+.experience .nav.nav-pills .nav-link:last-child {
+  border-radius: 0 55px 55px 0;
 }
 .experience .nav.nav-pills .nav-link::before {
   content: "";
@@ -392,19 +409,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100% !important;
 }
 .experience .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#experiences-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-.nav-link#experiences-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#experiences-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
+  border-color: rgba(255, 255, 255, 1);
+  z-index: 2;
 }
 .proj-imgbx {
   position: relative;
@@ -696,14 +702,14 @@ ul li::before {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 33%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
