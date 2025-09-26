@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/personal-site-v2/static/css/main.b6426931.css",
-    "main.js": "/personal-site-v2/static/js/main.244fa1b8.js",
-    "static/js/453.316d6c6f.chunk.js": "/personal-site-v2/static/js/453.316d6c6f.chunk.js",
-    "static/media/mini-compiler.jpg": "/personal-site-v2/static/media/mini-compiler.30dd9067257d00f714a9.jpg",
-    "static/media/banner-bg.png": "/personal-site-v2/static/media/banner-bg.c588b3d3f3613b8a58dd.png",
-    "static/media/logo.png": "/personal-site-v2/static/media/logo.6fe5a7ea77b240a81bbb.png",
-    "static/media/cartoon-writer.png": "/personal-site-v2/static/media/cartoon-writer.8a4d4eb0534ae6e0f886.png",
-    "static/media/Raymond_Resume_2025.pdf": "/personal-site-v2/static/media/Raymond_Resume_2025.17fa7ad30ea2cddde426.pdf",
-    "static/media/github-icon.png": "/personal-site-v2/static/media/github-icon.b59201ef2ff446316717.png",
-    "static/media/CentraNo2-Bold.ttf": "/personal-site-v2/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
-    "static/media/CentraNo2-Medium.ttf": "/personal-site-v2/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
-    "static/media/CentraNo2-Book.ttf": "/personal-site-v2/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/graphics.png": "/personal-site-v2/static/media/graphics.a7af4d093d0932d667c8.png",
-    "static/media/header-img.png": "/personal-site-v2/static/media/header-img.65074423c191ae314793.png",
-    "static/media/resume-icon.png": "/personal-site-v2/static/media/resume-icon.0596f6eff45f6b630e77.png",
-    "index.html": "/personal-site-v2/index.html",
-    "main.b6426931.css.map": "/personal-site-v2/static/css/main.b6426931.css.map",
-    "main.244fa1b8.js.map": "/personal-site-v2/static/js/main.244fa1b8.js.map",
-    "453.316d6c6f.chunk.js.map": "/personal-site-v2/static/js/453.316d6c6f.chunk.js.map"
+    "main.css": "/static/css/main.d61d6bbc.css",
+    "main.js": "/static/js/main.152e4c39.js",
+    "static/media/mini-compiler.jpg": "/static/media/mini-compiler.30dd9067257d00f714a9.jpg",
+    "static/media/banner-bg.png": "/static/media/banner-bg.c588b3d3f3613b8a58dd.png",
+    "static/media/logo.png": "/static/media/logo.6fe5a7ea77b240a81bbb.png",
+    "static/media/cartoon-writer.png": "/static/media/cartoon-writer.8a4d4eb0534ae6e0f886.png",
+    "static/media/Raymond_Resume_2025.pdf": "/static/media/Raymond_Resume_2025.17fa7ad30ea2cddde426.pdf",
+    "static/media/github-icon.png": "/static/media/github-icon.b59201ef2ff446316717.png",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/graphics.png": "/static/media/graphics.a7af4d093d0932d667c8.png",
+    "static/media/header-img.png": "/static/media/header-img.65074423c191ae314793.png",
+    "static/media/resume-icon.png": "/static/media/resume-icon.0596f6eff45f6b630e77.png",
+    "index.html": "/index.html",
+    "main.d61d6bbc.css.map": "/static/css/main.d61d6bbc.css.map",
+    "main.152e4c39.js.map": "/static/js/main.152e4c39.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6426931.css",
-    "static/js/main.244fa1b8.js"
+    "static/css/main.d61d6bbc.css",
+    "static/js/main.152e4c39.js"
   ]
 }
